@@ -18,8 +18,22 @@ div{
     padding-top: 45vh;
 }
 
+.jumbo h1, h3 {
+    color: #22313F;
+    font-style: italic;
+    margin-top: 6px;
+}
+
 .jumbo p {
     color: green;
+    margin: 15px 0px;
+    font-style: italic;
+    font-size: large;
+}
+
+.jumbo img {
+    border-radius: 20px;
+    margin-top: -90px;
 }
 
 .projects-work {
@@ -41,27 +55,47 @@ nav {
     display: block;
 }
 
+#navbar {
+    width: 100%;
+    position: fixed; /* Make it stick/fixed */
+    top: 0px; /* Hide the navbar 50 px outside of the top view */
+    z-index: 100;
+    margin-right: auto;
+    margin-top: -5px;
+}
+
+#navbar li {
+    background-color: #b8e6e6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 nav ul {
     position: fixed;
     text-align: right;
     background-color: #e0ebe8;
     width: 100%;
+    position: -webkit-sticky;
+    z-index: 99;
+    top: 0;
+    min-height: 10vh;
 }
 
 nav ul li {
-    margin: 45px;
     margin-bottom: 15px;
     margin-top: 25px;
+    margin-right: 5%;
     display: inline-block;
 }
 
 nav ul li a {
     color: #008080;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 nav ul li a:hover {
-    color: green;
+    color: #90C695;
 }
 
 .project {
@@ -126,6 +160,10 @@ ul {
     padding-bottom: 160px;
 }
 
+.contact p {
+    font-size: large;
+}
+
 .header {
     padding: 160px 0 110px;
 }
@@ -145,6 +183,7 @@ ul {
     height: 100px;
 }
 
+
 footer {
     background: #22313F;
     color: white;
@@ -155,6 +194,12 @@ footer {
 
 footer a {
     color: white;
+    text-decoration: none;
+}
+
+footer span {
+    color: red;
+    padding: 0 5px;
 }
 
 @media only screen and (max-width: 500px){
