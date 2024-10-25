@@ -5,77 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="zaratti, arthur, chizaram, arthur chizaram uzoma, uzoma">
-    <meta name="description" content="My Gitweb Portfolio">
+    <meta name="description" content="My Github webpage Portfolio">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" type="text/css" media="screen" href="stylez.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav>
-        <ul id="navbar">
-            <li>
-                <a href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <div id="welcome-section" class="jumbo">
-        <img src="./imagOnec.png" width="500" height="250">
-        <h1>Hello! I Am Arthur</h1>
-        <h3>a Software Developer/Engineer and an EFL Tutor</h3>
-        <p>I also tutor blockchain usecases, encryption benefits</p>
-        <p>and provide crypto-related services to interested individuals.</p>
-    </div>
-    <div id="projects" class="projects-work">
+        <div class="nav-container">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navbar">
+                <li>
+                    <a href="#about-me">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>   
+    <!-- Displaying my image -->
+    <div id="about-me" class="about-section">
+        <div class="profileImage">
+            <img class="profilePicture" src="./imagOnec.png" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+            <h1>Hello World! I Am Chizaram Arthur Uzoma</h1>
+            <h3>AI/Machine Learning Engineer | Software Developer/Engineer</h3>
+            <h4>Blockchain/Encryption Advocate | Christian Minister | Electoral Official</h4>
+            <h4>Virtual assets Exchanger | FX Trader and Businessman.</h4>
+        </div>
+    </div>    
+    <!-- My projects Display -->
+    <div id="projects" class="ProjectContainer">
         <h2 class="projects-header">These are some of my projects...</h2>
-        <a href="https://codepen.io/FreeCodeCamp/pen/NNvBQW" target="_blank" class="project project-title">
-            <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png" alt="project">
-            <div class="project-title">Tribute Page</div>
-        </a>
-        <a href="https://codepen.io/FreeCodeCamp/pen/ONjoLe" target="_blank" class="project project-title">
-            <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642771/7cd6a0c4-6171-11e6-87fb-915f6084d104.png" alt="project">
-            <div class="project-title">Random Quote Machine</div>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/pen/PNKdjo" target="_blank" class="project project-title">
-            <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642772/7d02406c-6171-11e6-8c79-40a2933163dc.png" alt="project">
-            <div class="project-title">JavaScript Calculator</div>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/pen/mVEJag" target="_blank" class="project project-title">
-            <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642773/7d08cb94-6171-11e6-8c45-22e7cf64683e.png" alt="project">
-            <div class="project-title">Map Data across the Globe</div>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/pen/wGqEga" target="_blank" class="project project-title">
-            <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642774/7d091806-6171-11e6-8d47-ecf2f2833fe2.png" alt="project">
-            <div class="project-title">Wikipedia Viewer</div>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/pen/KzXQgy" target="_blank" class="project project-title">
-            <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642775/7d354304-6171-11e6-8b56-66eee4681d88.png" alt="project">
-            <div class="project-title">Tic Tac Toe Game</div>
-        </a>
-        <a href="https://github.com/Zaratti/" class="show-all" target="_blank">
-            Show Repo
-        </a>
-    </div>
+        <div class="myProjects">
+            <div class="projectItems">
+                <a href="https://codepen.io/FreeCodeCamp/pen/NNvBQW" target="_blank">
+                    <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png" alt="project">
+                    <div class="project-title">Tribute Page</div>
+                </a>
+            </div>
+            <div class="projectItems">
+                <a href="https://codepen.io/FreeCodeCamp/pen/ONjoLe" target="_blank">
+                    <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642771/7cd6a0c4-6171-11e6-87fb-915f6084d104.png" alt="project">
+                    <div class="project-title">Random Quote Machine</div>
+                </a>
+            </div>
+            <!-- Work on the projects of this section-->
+            <div class="projectItems">
+                <a href="https://codepen.io/freeCodeCamp/pen/mVEJag" target="_blank">
+                    <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642773/7d08cb94-6171-11e6-8c45-22e7cf64683e.png" alt="project">
+                    <div class="project-title">Map Data across the Globe</div>
+                </a>
+            </div>
+            <div class="projectItems">
+                <a href="https://github.com/Zaratti/BigGAN-Capstone-Project-Deliverables" target="_blank">
+                    <img class="project-pic" src="https://raw.githubusercontent.com/zaratti/BigGAN-Capstone-Project-Deliverables/main/Ele_Pic.webp" alt="project">
+                    <div class="project-title">Electricity Demand and Supply Gap</div>
+                </a>
+            </div>
+            <div class="projectItems">
+                <a href="https://github.com/Zaratti/RenaissanceInnovationLabs_MachineLearning-Task1" target="_blank">
+                    <img class="project-pic" src="https://raw.githubusercontent.com/zaratti/RenaissanceInnovationLabs_MachineLearning-Task1/main/rename.webp" alt="project">
+                    <div class="project-title">Handwritten Scribbles Detection App</div>
+                </a>
+            </div>
+            <div class="projectItems">
+                <a href="https://codepen.io/freeCodeCamp/pen/PNKdjo" target="_blank">
+                    <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642772/7d02406c-6171-11e6-8c79-40a2933163dc.png" alt="project">
+                    <div class="project-title">JavaScript Calculator</div>
+                </a>
+            </div>
+            <!-- Repeat for other projects -->
+        </div>
+        <div class="show-all-wrapper">
+            <a href="https://github.com/Zaratti/" class="show-all" target="_blank">Show Projects Repository</a>
+        </div>
+    </div>    
     <div id="contact" class="contact">
         <div class="header">
             <h1>Let's work together...</h1>
             <p>How do you like your cocktail?</p>
         </div>
-        <a href="https://wa.link/me0w7t/" target="_blank" class="contact-details">WhatsApp</a>
-        <a id="profile-link" href="https://github.com/Zaratti" target="_blank" class="contact-details">GitHub</a>
-        <a href="https://www.linkedin.com/in/chizara-uzoma/" target="_blank" class="contact-details">LinkedIn</a>
-        <a href="mailto:ehello@protonmail.com" class="contact-details">Send a mail</a>
-        <a href="tel:234-803-5789-1288" class="contact-details">Call me</a>
-    </div>
+        <a href="https://wa.link/me0w7t/" target="_blank" class="contact-details">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a id="profile-link" href="https://github.com/Zaratti" target="_blank" class="contact-details">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/chizara-uzoma/" target="_blank" class="contact-details">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:ehello@protonmail.com" class="contact-details">
+            <i class="fas fa-envelope"></i> Send a mail
+        </a>
+        <a href="tel:+23480357891288" class="contact-details">
+            <i class="fas fa-phone-alt"></i> Call me
+        </a>
+    </div>    
     <footer>
-        This is Arthur personal portfolio. The projects on display are real and in development. Kindly reach him through any of the contact details.
-        <p>Designed with <span>&#9825;</span> by
-            <a href="https://zaratti.github.io/" target="_blank"> &copy; Zaratti 2022.</a>
-        </p>
+        <p>Welcome to my portfolio webpage. The projects on display are real and in continous development. Kindly reach me through any of the contact details.</p>
+        <p>Designed with <i class="fas fa-heart"></i> by 
+            <a href="https://zaratti.github.io/" target="_blank"> Zaratti<i class="copyright-icon fas fa-copyright"></i>  2024.</a>
+        </p>        
     </footer>
 </body>
 </html>
